@@ -5,7 +5,7 @@ $(document).ready(function(){
         "https://www.googleapis.com/youtube/v3/playlists",{
             part: "contentDetails",
             forUsername: channelName,
-            key:"",
+            key:"AIzaSyCDyE9O8JsibSiwd-D3FlNkuCDQKlYxYeo",
             function (data) {
                 $.each(data.items, function (i, item) {
                     console.log(item);
