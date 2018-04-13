@@ -2,7 +2,7 @@
 var channelName = "HoiThanhTinLanhVietNam North Hollywood";
 $(document).ready(function(){
     $.get (
-        "https://www.googleapis.com/youtube/v3/playlists",{
+        "https://www.googleapis.com/youtube/v3/channels",{
             part: "contentDetails",
             forUsername: channelName,
             key:"AIzaSyCDyE9O8JsibSiwd-D3FlNkuCDQKlYxYeo",
