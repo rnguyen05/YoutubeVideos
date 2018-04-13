@@ -1,7 +1,7 @@
 //Variables declaration
 var channelName = "HoiThanhTinLanhVietNam North Hollywood";
 $(document).ready(function(){
-    $.GET (
+    $.get (
         "https://www.googleapis.com/youtube/v3/channels",{
             part: "contentDetails",
             forUsername: channelName,
