@@ -1,7 +1,7 @@
 //Variables declaration
-alert("Hello");
+alert("Hello World");
 var channelName = "HoiThanhTinLanhVietNam North Hollywood";
-$(document).ready(function(){
+
     $.get (
             "https://www.googleapis.com/youtube/v3/channels",{
                 part: "contentDetails",
@@ -14,7 +14,7 @@ $(document).ready(function(){
                     })
                 } 
         );
-});
+
 
 
 
