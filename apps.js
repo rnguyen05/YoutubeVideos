@@ -1,5 +1,5 @@
 //Variables declaration
-alert();
+alert("Hello");
 var channelName = "HoiThanhTinLanhVietNam North Hollywood";
 $(document).ready(function(){
     $.get (
