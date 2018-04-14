@@ -11,6 +11,7 @@ $.ajax({
     method: "GET"
 }).then (function (response){
     console.log(response);
+    console.log("in response");
 });
 
 // var channelName = "HoiThanhTinLanhVietNam North Hollywood";
