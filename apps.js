@@ -1,19 +1,33 @@
 //Variables declaration
-alert("Hello World");
-var channelName = "HoiThanhTinLanhVietNam North Hollywood";
+var channelId = "UCaxUoPFigLWqGqR8zXvc_cA";
+var APIKey = "AIzaSyCDyE9O8JsibSiwd-D3FlNkuCDQKlYxYeo";
+var maxResults = 10;
 
-    $.get (
-            "https://www.googleapis.com/youtube/v3/channels",{
-                part: "contentDetails",
-                forUsername: channelName,
-                key:"AIzaSyCDyE9O8JsibSiwd-D3FlNkuCDQKlYxYeo"},
-                function (data) {
-                    $.each(data.items, function (i, item) {
-                        console.log(item);
-                        console.log("inside loop");
-                    })
-                } 
-        );
+var requestURL = "https://www.googleapis.com/youtube/v3/activities?channelId="+channelId+"&key="+APIKey+"&maxResults="+maxResults;
+
+
+$.ajax({
+    url:requestURL,
+    method: "GET"
+}).then (function (response){
+    console.log(response);
+});
+
+// var channelName = "HoiThanhTinLanhVietNam North Hollywood";
+
+//     $.get (
+//             "https://www.googleapis.com/youtube/v3/channels",{
+//                 part: "contentDetails",
+//                 forUsername: channelName,
+//                 key:"AIzaSyCDyE9O8JsibSiwd-D3FlNkuCDQKlYxYeo"},
+//                 function (data) {
+//                     $.each(data.items, function (i, item) {
+//                         console.log(item);
+//                         console.log("inside loop");
+//                     })
+//                 } ,
+                
+//         );
 
 
 
