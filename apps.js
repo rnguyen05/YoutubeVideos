@@ -3,7 +3,7 @@ var channelId = "UCaxUoPFigLWqGqR8zXvc_cA";
 var APIKey = "AIzaSyCDyE9O8JsibSiwd-D3FlNkuCDQKlYxYeo";
 var maxResults = 10;
 
-var requestURL = "https://www.googleapis.com/youtube/v3/activities?channelId="+channelId+"&key="+APIKey+"&maxResults="+maxResults;
+var requestURL = "https://www.googleapis.com/youtube/v3/activities?part=snippet,contentDetails&channelId="+channelId+"&key="+APIKey+"&maxResults="+maxResults;
 
 
 $.ajax({
