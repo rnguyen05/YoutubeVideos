@@ -10,11 +10,11 @@ $.ajax({
     url:requestURL,
     method: "GET"
 }).then (function (response){
-    //console.log(response);
+    console.log(response);
     console.log("in response");
-    $.each(data.items, function (i, item) {
-        console.log(item);
-    })
+    // $.each(.items, function (i, item) {
+    //     console.log(item);
+    // })
 });
 
 // var channelName = "HoiThanhTinLanhVietNam North Hollywood";
